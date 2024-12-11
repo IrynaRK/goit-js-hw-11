@@ -1,0 +1,50 @@
+.form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #212121;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 8px;
+
+  width: 272px;
+  height: 40px;
+  gap: 8px;
+  opacity: 0px;
+}
+
+input {
+  border: none;
+  width: 272px;
+  height: 40px;
+  gap: 8px;
+}
+
+button {
+  background-color: #4e75ff;
+  font-family: inherit;
+  color: white;
+  width: 91px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form {
+  display: flex;
+  width: 371px;
+  height: 40px;
+  top: 36px;
+  left: 534px;
+  gap: 8px;
+  opacity: 0px;
+}

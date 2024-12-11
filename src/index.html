@@ -7,7 +7,26 @@
     <title>HomeWork 11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="search-form">
+    <div class="search">
+      <form class="form" name="search-images" autocomplete="off">
+        <label>
+          <input type="text" name="search-images" placeholder />
+        </label>
+      </form>
+      <button type="submit">Submit</button>
+    </div>
+    <div class="gallery-container">
+      <li class="gallery-item">
+        <a class="gallery-link" href="large-image.jpg">
+          <img
+            class="gallery-image"
+            src="small-image.jpg"
+            alt="Image description"
+          />
+        </a>
+      </li>
+    </div>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./js/pixabay-api.js"></script>
     <script type="module" src="./js/render-functions.js"></script>
