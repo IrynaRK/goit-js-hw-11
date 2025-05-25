@@ -15,9 +15,18 @@ export function createGallery(images) {
   const markup = images.hits
     .map(
       image => `
-        <a href="${image.largeImageURL}" class="gallery-item">
-            <img src="${image.webformatURL}" alt="${image.tags}">
-        </a>
+         <li class="gallery-item">
+      <a href="${image.largeImageURL}" class="gallery-link">
+        <img src="${image.webformatURL}" alt="${image.tags}" loading="lazy">
+      </a>
+      <div class="image-info">
+        <p>❤️ ${image.likes}</p>
+        <p>👁️ ${image.views}</p>
+        <p>💬 ${image.comments}</p>
+        <p>⬇️ ${image.downloads}</p>
+      </div>
+    </li>
+
     `
     )
     .join('');
